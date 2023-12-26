@@ -1,5 +1,4 @@
 terraform {
-  required_version = ">=0.13.0"
   required_providers {
     aws = {
       source = "hashicorp/aws"
@@ -9,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-central-1"
+  region = "eu-north-1"
 }
 
 resource "aus_security_group" "web_app" {
