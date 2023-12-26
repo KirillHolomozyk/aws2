@@ -1,16 +1,15 @@
-
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
+      source = "hashicorp/aws"
+      version = "5.28.0"
     }
   }
 }
 
-
+# Configure the AWS provider
 provider "aws" {
-  region = "eu-north-1"
+  region     = "eu-north-1"
 }
 
 resource "aus_security_group" "web_app" {
