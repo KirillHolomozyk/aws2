@@ -12,7 +12,7 @@ provider "aws" {
   region     = "eu-north-1"
 }
 
-resource "aus_security_group" "web_app" {
+resource "aws_security_group" "web_app" {
   name = "web_app"
   description = "security group"
   ingress {
