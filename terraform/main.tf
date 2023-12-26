@@ -16,19 +16,19 @@ resource "aws_security_group" "web_app" {
   name = "web_app"
   description = "security group"
   ingress {
-    grom_port = 80
+    from_port = 80
     to_port = 80
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   } 
   ingress {
-    grom_port = 22
+    from_port = 22
     to_port = 22
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
   engress {
-    grom_port = 0
+    from_port = 0
     to_port = 65535
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
